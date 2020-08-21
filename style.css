@@ -1,0 +1,262 @@
+  /* Modify the backgorund color */
+  .bg-custom {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 100%);
+  }
+
+  html,body {
+    overflow-x: hidden;
+  }
+  
+  body {
+      position: relative;
+  }
+
+  /* Navbar */
+  .navbar {
+    border-top: 1.5px solid #1776D0;
+  }
+
+  .navbar-brand {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+  }
+
+  /* Jumbotron */
+  .jumbotron {
+    background-image: url(ummi.jpg);
+    background-size: cover;
+    position: relative;
+    height: 542px;
+    background-position: -110px 0px;
+    margin-bottom: 0;
+  }
+
+  .jumbotron .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+
+  .jumbotron .display-4 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 172px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 36px;
+  }
+
+  /* Utility */
+  .btn {
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6));
+  }
+
+  div.form-check.jr {
+    margin-bottom: 1em;
+  }
+
+  /* ISI 1 */
+  .isi1 {
+    text-align: center;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 70px;
+    background-image: url(bg2.png);
+  }
+
+  /* ISI 2 */
+  .isi2 {
+    box-sizing: border-box;
+    padding-right: 40px;
+    background-image: url(wave.png);
+    margin-left: 0px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+
+  .row .isi2 {
+    height: 150px;
+    box-sizing: border-box;
+  }
+
+  .isi2 h3 {
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+
+  .isi2 h3 span {
+    font-weight: 500;
+  }
+
+  a.btn.btn-primary.lihat {
+    margin-left: 50px;
+  }
+
+  .img-fluid {
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 40px;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6));
+  }
+
+  /* Footer */
+  .footer-bottom-text {
+    text-align: center;
+    background: #000;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  p.footer-bottom-text {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  /* biodata */
+  .bio {
+    padding: 20px;
+  }
+
+  .bio h3 {
+    text-align: center;
+  }
+
+  /* Daftar */
+  a.btn.btn-outline-danger {
+    margin-bottom: -2px;
+  }
+
+  .daftar {
+    width: 350px;
+    margin: auto;
+    padding: 40px 40px 25px;
+    box-sizing: border-box;
+  }
+
+  .daftar h2 {
+    text-align: center;
+  }
+
+  /* Data */
+  .data1 {
+    width: 400px;
+    padding: 25px 50px 25px 14px;
+    box-sizing: border-box;
+  }
+
+  .data1 h2 {
+    padding-left: 70px;
+    box-sizing: border-box;
+  }
+
+  .data1 table {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  a.btn.btn-danger.data {
+    margin-bottom: 1em;
+  }
+
+  /* DESKTOP VERSION */
+  @media (min-width:992px) {
+
+    /* Navbar */
+    .navbar {
+      height: 50px;
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .nav-link {
+      text-transform: uppercase;
+      margin-right: 30px;
+      font-size: 15px;
+      color: #3B77BA !important;
+      font-weight: 500;
+    }
+
+    .av {
+      color: black !important;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+      height: 623px;
+      border-top: 50px solid white;
+      background-position: 0 -80px;
+    }
+
+    .jumbotron .display-4 {
+      margin-top: 110px;
+      font-size: 62px;
+    }
+
+    /* ISI 1 */
+    .isi1 {
+      height: 250px;
+      padding: 80px;
+    }
+
+    /* ISI 2 */
+    .img-fluid {
+      height: 180px;
+      margin-bottom: 50px;
+      margin-left: 380px;
+    }
+
+    .isi2 h3 {
+      margin-top: 90px;
+      font-size: 52px;
+    }
+
+    /* Utility */
+    .btn {
+      text-transform: uppercase;
+    }
+
+    /* Daftar */
+    .daftar {
+      width: 800px;
+    }
+
+    /* Data */
+    .data1 {
+      width: 800px;
+      margin: auto;
+      padding: 25px 40px 25px;
+    }
+
+    .data1 h2 {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .data1 table {
+      font-size: 13px;
+    }
+
+    /* Footer */
+    .footer-bottom-text {
+      line-height: 40px;
+    }
+
+    p.footer-bottom-text {
+      font-size: 14px;
+    }
+  }
